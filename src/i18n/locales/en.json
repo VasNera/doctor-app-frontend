@@ -1,0 +1,198 @@
+{
+  "app": {
+    "name": "DoctorApp",
+    "tagline": "Clinic appointment management"
+  },
+  "nav": {
+    "bookAppointment": "New appointment",
+    "myAppointments": "My appointments",
+    "appointments": "Appointments",
+    "generateTimeslots": "Generate timeslots",
+    "doctors": "Doctors",
+    "newDoctor": "New doctor"
+  },
+  "auth": {
+    "loginTitle": "Login",
+    "loginSubtitle": "Sign in to your account",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "registerTitle": "Patient registration",
+    "registerSubtitle": "Create your account",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "invalidCredentials": "Wrong username or password.",
+    "registerSuccess": "Registration completed. You can now log in.",
+    "activateTitle": "Doctor account activation",
+    "activateSubtitle": "Set a username and password to activate your account",
+    "activate": "Activate",
+    "activateSuccess": "Account activated. You can now log in.",
+    "missingToken": "The activation link is invalid — the token is missing.",
+    "accountSection": "Account details"
+  },
+  "form": {
+    "username": "Username",
+    "password": "Password",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "email": "Email",
+    "amka": "AMKA",
+    "phoneNumber": "Phone number",
+    "licenceNumber": "Licence number",
+    "licenceNumberHint": "Format: DOC-1234-56789",
+    "specialty": "Specialty",
+    "selectSpecialty": "Select a specialty",
+    "fromDate": "From",
+    "toDate": "To",
+    "date": "Date",
+    "reason": "Visit reason",
+    "reasonPlaceholder": "Optional — briefly describe the reason",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  },
+  "validation": {
+    "username": {
+      "notBlank": "Username is required",
+      "size": "Username must be between 2 and 30 characters"
+    },
+    "password": {
+      "notBlank": "Password is required",
+      "pattern": "Password must be at least 8 characters, with one uppercase, one lowercase, one digit and one special character"
+    },
+    "firstname": {
+      "notBlank": "Firstname is required",
+      "size": "Firstname must be between 2 and 30 characters"
+    },
+    "lastname": {
+      "notBlank": "Lastname is required",
+      "size": "Lastname must be between 2 and 30 characters"
+    },
+    "email": {
+      "notBlank": "Email is required",
+      "invalid": "Email must be a valid format"
+    },
+    "amka": {
+      "notBlank": "AMKA is required",
+      "pattern": "AMKA must consist of 11 digits"
+    },
+    "phoneNumber": {
+      "notNull": "Phone number is required"
+    },
+    "licence": {
+      "notBlank": "Licence number is required",
+      "pattern": "Licence number must be a valid format"
+    },
+    "specialty": {
+      "notNull": "Specialty is required"
+    },
+    "timeSlot": {
+      "notNull": "Timeslot is required"
+    },
+    "doctor": {
+      "notNull": "Doctor selection is required"
+    },
+    "fromDate": {
+      "notNull": "From date is required",
+      "futureOrPresent": "From date must be today or in the future"
+    },
+    "toDate": {
+      "notNull": "To date is required",
+      "beforeFrom": "To date cannot be before the from date"
+    },
+    "dateRange": {
+      "tooLarge": "Date range cannot exceed 60 days"
+    }
+  },
+  "specialty": {
+    "CARDIOLOGY": "Cardiology",
+    "DERMATOLOGY": "Dermatology",
+    "ORTHOPEDICS": "Orthopedics",
+    "NEUROLOGY": "Neurology",
+    "PEDIATRICS": "Pediatrics",
+    "GYNECOLOGY": "Gynecology",
+    "UROLOGY": "Urology",
+    "GASTROENTEROLOGY": "Gastroenterology",
+    "PSYCHIATRY": "Psychiatry"
+  },
+  "appointmentStatus": {
+    "PENDING": "Pending",
+    "CONFIRMED": "Confirmed",
+    "CANCELLED": "Cancelled",
+    "COMPLETED": "Completed"
+  },
+  "role": {
+    "ADMIN": "Administrator",
+    "DOCTOR": "Doctor",
+    "PATIENT": "Patient"
+  },
+  "appointments": {
+    "title": "My appointments",
+    "doctorTitle": "Patient appointments",
+    "doctor": "Doctor",
+    "date": "Date",
+    "time": "Time",
+    "status": "Status",
+    "reason": "Reason",
+    "allStatuses": "All statuses",
+    "filterByStatus": "Filter by status",
+    "empty": "No appointments found.",
+    "cancel": "Cancel",
+    "cancelTitle": "Cancel appointment?",
+    "cancelDescription": "The appointment on {{date}} ({{time}}) will be cancelled and the slot will become available again.",
+    "cancelConfirm": "Yes, cancel it",
+    "cancelSuccess": "The appointment was cancelled."
+  },
+  "booking": {
+    "title": "New appointment",
+    "subtitle": "Pick a doctor and an available slot",
+    "selectDoctor": "Select a doctor",
+    "searchDoctor": "Search doctors...",
+    "noDoctors": "No doctors found.",
+    "filterByDate": "Filter by date",
+    "clearDate": "Clear",
+    "availableSlots": "Available slots",
+    "noSlots": "No available slots for this doctor.",
+    "pickDoctorFirst": "Pick a doctor first to see available slots.",
+    "confirmTitle": "Confirm appointment",
+    "confirmDescription": "{{doctor}} — {{date}} at {{time}}",
+    "book": "Book appointment",
+    "bookSuccess": "The appointment was booked."
+  },
+  "timeslots": {
+    "title": "Generate available slots",
+    "subtitle": "Creates 30-minute slots, Monday–Friday 09:00–17:00",
+    "generate": "Generate",
+    "preview": "Up to {{count}} new slots will be created ({{days}} working days).",
+    "generateSuccess": "{{count}} new available slots were created."
+  },
+  "doctors": {
+    "title": "Doctors",
+    "newDoctor": "New doctor",
+    "createTitle": "Register a doctor",
+    "createSubtitle": "The doctor will receive an activation email",
+    "create": "Create",
+    "createSuccess": "The doctor was created and an activation email was sent.",
+    "empty": "No doctors found."
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Cannot reach the server.",
+    "ACCESS_DENIED": "You are not allowed to perform this action.",
+    "pageTitle": "Something went wrong",
+    "retry": "Try again"
+  },
+  "actions": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "back": "Back",
+    "loading": "Loading...",
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{page}} of {{total}}"
+  },
+  "language": {
+    "label": "Language",
+    "el": "Greek",
+    "en": "English"
+  }
+}
