@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 48" width="212" height="48">
+  <rect y="2" width="44" height="44" rx="11" fill="#2563eb"/>
+  <g stroke="#ffffff" stroke-width="4.5" stroke-linecap="round">
+    <line x1="22" y1="15" x2="22" y2="33"/>
+    <line x1="13" y1="24" x2="31" y2="24"/>
+  </g>
+  <text x="58" y="34" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="30" font-weight="700" letter-spacing="-0.5">
+    <tspan fill="#0f172a">Doctor</tspan><tspan fill="#2563eb">-App</tspan>
+  </text>
+</svg>
