@@ -16,7 +16,7 @@ export const doctorsListOptions = (params: PageParams) =>
   queryOptions({
     queryKey: doctorKeys.list(params),
     queryFn: () => doctorsApi.getDoctors(params),
-    placeholderData: keepPreviousData, // no flash while paging
+    placeholderData: keepPreviousData, 
   })
 
 
