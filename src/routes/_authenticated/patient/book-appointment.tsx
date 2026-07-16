@@ -57,8 +57,7 @@ function BookAppointmentPage() {
     },
   })
 
-  // What the user picked drives the dependent slot search (dependent query
-  // pattern: the route can't know these, only interaction can).
+ 
   const doctorUuid = form.watch("doctorUuid")
   const date = form.watch("date")
 
