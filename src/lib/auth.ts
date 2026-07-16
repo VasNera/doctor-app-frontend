@@ -27,9 +27,13 @@ export const auth = {
     if (!token) return null
     try {
       const { sub, role, exp } = jwtDecode<JwtClaims>(token)
-      if (exp * 1000 <= Date.now()) return null
+      if (exp * 1000 <= Date.now()) {
+        auth.clearToken() 
+        return null
+      }
       return { username: sub, role, exp }
     } catch {
+      auth.clearToken() 
       return null
     }
   },
