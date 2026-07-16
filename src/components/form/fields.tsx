@@ -39,10 +39,7 @@ import {
 import { Textarea } from "@/components/ui/textarea"
 import { cn } from "@/lib/utils"
 
-// Every wrapper collapses the Field/Label/Control/Error boilerplate into a
-// single line at the call site. `label`, `description` and zod `message`s are
-// i18n KEYS — translated here, at render time, so a language switch instantly
-// re-translates both labels and any visible validation errors.
+
 
 interface BaseFieldProps<T extends FieldValues> {
   control: Control<T>
@@ -51,7 +48,7 @@ interface BaseFieldProps<T extends FieldValues> {
   description?: string
 }
 
-// FieldError content is translated through this tiny helper.
+
 function useFieldError() {
   const { t } = useTranslation()
   return (message?: string) =>
