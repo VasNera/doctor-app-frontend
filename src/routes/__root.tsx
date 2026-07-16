@@ -17,7 +17,7 @@ function RootLayout() {
       {import.meta.env.DEV && (
         <>
           <TanStackRouterDevtools position="bottom-right" />
-          <ReactQueryDevtools buttonPosition="bottom-left" />
+          <ReactQueryDevtools buttonPosition="top-right" />
         </>
       )}
     </>
