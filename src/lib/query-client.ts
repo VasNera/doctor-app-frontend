@@ -6,7 +6,7 @@ export const queryClient = new QueryClient({
     queries: {
       staleTime: 30_000,
       retry: (failureCount, error) => {
-        // 4xx responses are deterministic — retrying cannot fix them.
+        
         if (
           isAxiosError(error) &&
           error.response &&
