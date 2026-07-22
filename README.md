@@ -4,6 +4,9 @@ React single-page application for a small clinic: patients book appointments on 
 
 This is the frontend counterpart of the [doctor-app Spring Boot backend](https://github.com/VasNera/doctor-app). It talks to the backend's REST API and mirrors its validation and security model.
 
+> **Demo login (admin):** username `admin` · password `Ad12345!`
+> Patients can also self-register from the login screen.
+
 ## Features
 
 **Public**
