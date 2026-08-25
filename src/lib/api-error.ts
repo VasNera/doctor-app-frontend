@@ -22,9 +22,6 @@ function isValidationError(
 }
 
 
-// Central place that turns ANY error into a user-facing, localized message.
-// Backend messages arrive already translated (Accept-Language); the fallbacks
-// cover network failures and codes without their own text.
 export function getApiErrorMessage(error: unknown, t: TFunction): string {
   const apiError = getApiError(error)
   if (apiError) {
