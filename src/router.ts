@@ -16,7 +16,7 @@ export const router = createRouter({
   routeTree,
   context: { queryClient, auth },
   defaultPreload: "intent",
-  // Shown whenever a route's loader/component throws (e.g. a query fails).
+ 
   defaultErrorComponent: ErrorState,
 })
 
