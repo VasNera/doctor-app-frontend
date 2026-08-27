@@ -23,7 +23,8 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import type { AuthUser, Role } from "@/lib/auth"
+import type { Role } from "@/api/types"
+import type { AuthUser } from "@/lib/auth"
 
 interface NavItem {
   to: string
