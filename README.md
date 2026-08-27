@@ -4,7 +4,8 @@ React single-page application for a small clinic: patients book appointments on 
 
 This is the frontend counterpart of the [doctor-app Spring Boot backend](https://github.com/VasNera/doctor-app). It talks to the backend's REST API and mirrors its validation and security model.
 
-> **Demo login (admin):** username `admin` · password `Ad12345!`
+> **Demo logins** — seeded by the backend on startup, one per role:
+> `admin` / `Ad12345!` · `drdemo` / `Doc12345!` · `patientdemo` / `Pat12345!`
 > Patients can also self-register from the login screen.
 
 ## Features
@@ -57,7 +58,12 @@ npm run dev        # http://localhost:5173
 
 The API base URL is set in `src/api/axios.ts` (`http://localhost:8080/api/v1`).
 
-On first backend start a local admin account is seeded (`admin` / `Ad12345!` — development only). Patients register themselves; doctors are created by the admin and activate their account through the emailed link (Mailtrap sandbox in development).
+On startup the backend seeds one account per role (development only): `admin` / `Ad12345!`,
+`drdemo` / `Doc12345!` and `patientdemo` / `Pat12345!`, together with two weeks of available
+time slots for the demo doctor — so every screen can be explored right away.
+
+Beyond the seeded accounts, patients register themselves, while doctors are created by the
+admin and activate their account through the emailed link (Mailtrap sandbox in development).
 
 Other scripts:
 
