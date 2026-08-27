@@ -24,7 +24,7 @@ import { formatDate, formatTimeRange } from "@/lib/format"
 
 
 const searchSchema = z.object({
-  page: z.number().int().min(0).catch(0),
+  page: z.number().int().min(0).catch(0).default(0),
   status: z.enum(APPOINTMENT_STATUSES).optional().catch(undefined),
 })
 

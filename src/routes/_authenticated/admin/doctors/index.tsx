@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button"
 import { doctorsListOptions } from "@/features/doctors/queries"
 
 const searchSchema = z.object({
-  page: z.number().int().min(0).catch(0),
+  page: z.number().int().min(0).catch(0).default(0),
 })
 
 
